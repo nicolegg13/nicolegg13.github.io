@@ -1,165 +1,244 @@
 <!DOCTYPE html>
 <!-- MENU - PARTE DE CIMA DO SITE -->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-        <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
-        <script src="js/cdn.datatables.net_1.13.4_js_jquery.dataTables.min.js" type="text/javascript"></script>
-        <link href="css/cdn.datatables.net_1.13.4_css_jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
-        <style>
-            .container{
-                text-align: center;
-                color: white;
-                border: solid thick black;
-                border-radius: 1em;
+
+<head>
+    <meta charset="UTF-8">
+    <title>Início</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="js/cdn.datatables.net_1.13.4_js_jquery.dataTables.min.js" type="text/javascript"></script>
+    <link href="css/cdn.datatables.net_1.13.4_css_jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .container {
+            text-align: center;
+            color: white;
+            border: solid thick black;
+            border-radius: 1em;
+        }
+
+        .nav-pills {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-pills li {
+            margin-right: 20px; /* Reduz a distância entre os itens */
+        }
+
+        .nav-pills a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px; /* Diminui o tamanho da letra */
+        }
+
+        .col-md-2 {
+            width: 40%;
+        }
+
+        /* Estilos para dispositivos móveis (max-width: 768px) */
+        @media (max-width: 768px) {
+            .nav-pills {
+                flex-direction: row; /* Itens organizados horizontalmente */
+                justify-content: center; /* Centraliza os itens */
             }
 
-            
-        </style>
-        
-    </head>
-    <body style="background-color: black;"> 
-        <div class="container" style="padding-top: 20px !important; text-align: center !important; background-color: black !important;">
-            <div class="row nav-pills">
-                <br/>
-                <div class="col-md-2">
-                    <a href="index.html"><img src="img/chernobyl_b.png" style="text-align: center !important; height: 100% !important; width: 100% !important"></a>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-1">
-                    <a href="index.html" class="nav-link"><b><br/>Home</b></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" class="nav-link"><b><br/>Loja &#709;</b></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" class="nav-link"><b><br/>Categorias &#709;</b></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" class="nav-link"><b><br/>Minha área &#709;</b></a>
-                </div>
+            .nav-pills li {
+                margin-right: 5px; /* Reduz ainda mais a distância entre os itens */
+            }
+
+            .nav-pills a {
+                font-size: 12px; /* Ajusta o tamanho da letra */
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background-color: black;">
+    <div class="container"
+        style="padding-top: 20px !important; text-align: center !important; background-color: black !important;">
+        <div class="row nav-pills">
+            <br />
+            <div class="col-md-2">
+                <a href="index.html"><img src="img/chernobyl_b.png"
+                        style="text-align: center !important; height: 100% !important; width: 100% !important"></a>
             </div>
-            <br/>
-
-            <div class="col-md-4"></div>
+            <div class="col-md-2">
+                <a href="index.html" class="nav-link"><b><br />Home</b></a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" class="nav-link"><b><br />Categorias &#709;</b></a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" class="nav-link"><b><br />Minha área &#709;</b></a>
+            </div>
         </div>
+        <br />
+
+        <div class="col-md-4"></div>
+    </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
 
-<style>
-    #telao {
-        margin-left: 1% !important;
-        margin-right: 1% !important;
-        height: 500px;
-        width: 1900px;
-        cursor: pointer;
-        transition:all .3s;
-        text-align: center;
-    }
-    #cont {
-        color: white;
-        margin-left: 4%;
-        margin-top: 1%;
-        font-size: 20px;
-    }
-    #tela {
-        height: 480px;
-        width: 320px;
-        border-radius: 10px;
-        transition: all .2s ease-in-out;
-        margin-left: 20px;
-    }
-    #tela:hover {
-        transform: scale(1.1);
-        background-position: -60px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        cursor: pointer;
-    }
-    #topico {
-        margin-left: 2em;
-    }
-    .slide {
-        text-align: center;
-    }
+        <!-- telao: 
+            height: 350px;
+            width: 1330px;
+        -->
 
+    <style>
+        #telao {
+            margin-left: 1% !important;
+            margin-right: 1% !important;
+            margin-bottom: 1% !important;
+            cursor: pointer;
+            transition: all .3s;
+            text-align: center;
+        }
+
+        .responsive-image {
+            max-width: 150%;
+            height: auto;
+        }
+
+        #cont {
+            color: white;
+            margin-left: 4%;
+            margin-top: 1%;
+            font-size: 15px;
+        }
+
+        #tela {
+            height: auto;
+            max-width: 150px;
+            border-radius: 10px;
+            transition: all .2s ease-in-out;
+            margin-left: 20px;
+        }
+
+        #tela:hover {
+            transform: scale(1.1);
+            background-position: -60px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            cursor: pointer;
+        }
+
+        #topico {
+            margin-left: 2em;
+        }
+
+        .slide {
+            text-align: center;
+        }
+
+
+
+
+    .slider-containe1r {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .slider-container1 li {
+            list-style: none;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+        }
+
+        .slider-container1 img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .slider-container1 {
+                flex-direction: column;
+                overflow-x: hidden;
+            }
+            .slider-container1 li {
+                margin-bottom: 20px;
+            }
+        }
 </style>
 
-<div class="swiffy-slider">
-    <div class="slide">
-        <ul class="slider-container container-fluid">
-            <li><img src="img/c1.png" id="telao"></li>
-            <li><img src="img/c2.png" id="telao"></li>
-            <li><img src="img/c3.png" id="telao"></li>
-            <li><img src="img/c5.png" id="telao"></li>
-            <li><img src="img/c6.png" id="telao"></li>
-            <li><img src="img/c7.png" id="telao"></li>
-            <li><img src="img/c9.png" id="telao"></li>
-            <li><img src="img/c10.png" id="telao"></li>
-            <li><img src="img/c11.png" id="telao"></li>
-        </ul>
+
+        
+        
+    
+
+    <div class="swiffy-slider">
+        <div class="slide">
+            <ul class="slider-container container-fluid">
+                <li><img src="img/c1.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c2.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c3.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c5.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c6.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c7.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c9.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c10.png" id="telao" class="responsive-image"></li>
+                <li><img src="img/c11.png" id="telao" class="responsive-image"></li>
+            </ul>
+        </div>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <!-- numero de slides -->
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
     </div>
 
-    <button type="button" class="slider-nav"></button>
-    <button type="button" class="slider-nav slider-nav-next"></button>
+    <p id="cont"> <img src="img/chernobyl_b.png" style="height: 8%; width: 8%;"> <b>Chernobyl Originais e exclusivos</b>
+    </p>
 
-    <div class="slider-indicators">
-        <button class="active"></button>
-        <!-- numero de slides -->
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    </div>
-</div>
+    <!-- 9 topicos -->
 
-<p id="cont" > <img src="img/chernobyl_b.png" style="height: 8%; width: 8%;"> <b>Chernobyl Originais e exclusivos</b></p>
+    <div class="swiffy-slider">
+        <div class="slide">
+            <ul class="slider-container1 container-fluid">
+                <li>
+                    <div class id="topico" style="margin-left: 2%;">
+                        <br />
+                        <a href="pages/introducaoPage.html"><img id="tela" src="img/rad2-g.jpg"></a>
+                        <a href="pages/desastrePage.html"><img id="tela" src="img/ab-g.jpg"></a>
+                        <a href="pages/impcurtoPage.html"><img id="tela" src="img/ani-g.jpg"></a>
+                        <a href="pages/implongoPage.html"><img id="tela" src="img/mask-g.jpg"></a>
+                        <a href="pages/peintPage.html"><img id="tela" src="img/pe-g.png"></a>
+                        
+                        <a href="pages/pefeitoPage.html"><img id="tela" src="img/pe2.jpg"></a>
+                        <a href="pages/legadoPage.html"><img id="tela" src="img/park-g.jpg"></a>
+                        <a href="pages/quimicaPage.html"><img id="tela" src="img/reat-g.jpg"></a>
+                        <a href="pages/biologiaPage.html"><img id="tela" src="img/roda-g.jpg"></a>
+                        <a href="pages/fisicaPage.html"><img id="tela" src="img/out-g.jpg"></a>
+                    </div><br />
+                </li>
+            </ul>
+            
+        </div>
 
-<!-- 9 topicos -->
-
-<div class="swiffy-slider">
-    <div class="slide">
-        <ul class="slider-container container-fluid">
-            <li>
-                <div class id="topico" style="margin-left: 4%;" >
-                    <br/>
-                    <a href="pages/introducaoPage.html"><img id="tela" src="img/rad2-g.jpg"></a>
-                    <a href="pages/desastrePage.html"><img id="tela" src="img/ab-g.jpg"></a>
-                    <a href="pages/impcurtoPage.html"><img id="tela" src="img/ani-g.jpg"></a>
-                    <a href="pages/implongoPage.html"><img id="tela" src="img/mask-g.jpg"></a>
-                    <a href="pages/peintPage.html"><img id="tela" src="img/pe-g.png"></a>
-                </div><br/></li>
-            <li>
-                <div class id="topico" style="margin-left: 4%;" >
-                    <br/>
-                    <a href="pages/pefeitoPage.html"><img id="tela" src="img/pe2.jpg"></a> 
-                    <a href="pages/legadoPage.html"><img id="tela" src="img/park-g.jpg"></a>
-                    <a href="pages/quimicaPage.html"><img id="tela" src="img/reat-g.jpg"></a>
-                    <a href="pages/biologiaPage.html"><img id="tela" src="img/roda-g.jpg"></a>
-                    <a href="pages/fisicaPage.html"><img id="tela" src="img/out-g.jpg"></a>
-                </div><br/></li>
-        </ul>
-    </div>
-
-    <button type="button" class="slider-nav"></button>
-    <button type="button" class="slider-nav slider-nav-next"></button>
-
-    <div class="slider-indicators">
-        <button class="active"></button>
-        <!-- numero de slides -->
-        <button></button>
-    </div>
-</div>
-
-<br/>
-<br/>
-<br/>
+    <br />
+    <br />
+    <br />
