@@ -1,7 +1,23 @@
-#fundo {
-    height: 940px;
-    width: 1980px;
+.container {
+    text-align: center;
+    color: white;
+    border: solid thick black;
+    border-radius: 1em;
+}
+
+#telao {
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-bottom: 1% !important;
+    cursor: pointer;
+    transition: all .3s;
+    text-align: center;
     box-shadow: inset -30px -30px 30px 0px #000;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
 }
 
 .container-fluid {
@@ -14,86 +30,157 @@
     position: absolute;
 }
 
-#texto1 {
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    left: 100px;
-    top: 23%;
-}
-#texto2 {
-    position: absolute;
-    font-size: 50px;
-    font-weight: bold;
-    left: 100px;
-    top: 30%;
-}
-#texto3 {
-    position: absolute;
-    font-family: verdana;
-    font-size: 19px;
-    left: 100px;
-    top: 43%;
-}
-#texto4 {
-    position: absolute;
-    font-family: verdana;
-    color: gray !important;
-    font-size: 18px;
-    left: 100px;
-    top: 53%;
-}
-#texto5 {
-    position: absolute;
-    font-family: verdana;
-    font-size: 18px;
-    left: 100px;
-    top: 58%;
-}
-#texto6 {
-    position: absolute;
-    font-family: verdana;
-    font-size: 16px;
-    left: 100px;
-    top: 63%;
-}
-#texto7 {
-    position: absolute;
-    font-family: verdana;
-    font-size: 19px;
-    left: 100px;
-    top: 68%;
-}
+
+
 #play {
     transition: all .2s ease-in-out;
     border-radius: 80%;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
+
 #play:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-#texto8 {
-    position: absolute;
-    font-family: verdana;
-    font-size: 19px;
-    left: 100px;
-    top: 95%;
-    margin-left: 36%;
-    text-decoration: underline;
-    color: white;
-}
+
 #tela {
-    height: 240px;
-    width: 320px;
+    height: auto;
+    max-width: 300px;
     border-radius: 10px;
     transition: all .2s ease-in-out;
     margin-left: 20px;
+    margin-top: 20px;
 }
+
 #tela:hover {
     transform: scale(1.1);
     background-position: -60px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     cursor: pointer;
+}
+
+#topico {
+    color: lightblue;
+    margin-left: 2em;
+}
+
+.slide {
+    text-align: center;
+}
+
+.footer:hover {
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center !important;
+    font-size: 20px;
+
+}
+
+
+.slider-container1 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider-container1 li {
+    list-style: none;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider-container1 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* @media (max-width: 1000px) {
+    #texto1 {
+        display: none;
+    }
+
+    #texto4 {
+        display: none;
+    }
+
+    #texto5 {
+        display: none;
+    }
+
+} */
+
+
+
+#texto1 {
+    /* position: absolute; */
+    font-size: 25px;
+    margin-left: 50px;
+    /* top: 6%; */
+}
+
+#texto2 {
+    /* position: absolute; */
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 50px;
+    /* top: 2%; */
+}
+
+#texto3 {
+    /* position: absolute; */
+    font-family: verdana;
+    font-size: 30px;
+    margin-left: 50px;
+    /* top: 7%; */
+    margin-right: 50px;
+    text-align: justify;
+}
+
+#texto4 {
+/*     position: absolute;
+ */    font-family: verdana;
+    color: gray !important;
+    font-size: 23px;
+    margin-left: 50px;
+    /* top: 8%; */
+}
+
+#texto5 {
+/*     position: absolute;
+ */    font-family: verdana;
+    font-size: 23px;
+    margin-left: 50px;
+    /* top: 9%; */
+}
+
+#texto6 {
+    /* position: absolute; */
+    font-family: verdana;
+    font-size: 22px;
+    margin-left: 50px;
+    top: 19%;
+}
+
+#texto7 {
+    /* position: absolute; */
+    font-family: verdana;
+    font-size: 25px;
+    margin-left: 50px;
+    /* top: 21%; */
+}
+
+#texto8 {
+    /* position: absolute; */
+    font-family: verdana;
+    font-size: 30px;
+    /* top: 95%; */
+    margin-left: 40%;
+    text-decoration: underline;
+    color: white;
 }
