@@ -1,0 +1,128 @@
+.container {
+    text-align: center;
+    color: white;
+    border: solid thick black;
+    border-radius: 1em;
+}
+
+.nav-pills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-pills li {
+    margin-right: 20px; /* Reduz a distância entre os itens */
+}
+
+.nav-pills a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Diminui o tamanho da letra */
+}
+
+.col-md-2 {
+    width: 40%;
+}
+
+/* Estilos para dispositivos móveis (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav-pills {
+        flex-direction: row; /* Itens organizados horizontalmente */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .nav-pills li {
+        margin-right: 5px; /* Reduz ainda mais a distância entre os itens */
+    }
+
+    .nav-pills a {
+        font-size: 12px; /* Ajusta o tamanho da letra */
+    }
+}
+
+#telao {
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-bottom: 1% !important;
+    cursor: pointer;
+    transition: all .3s;
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 150%;
+    height: auto;
+}
+
+#cont {
+    color: white;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-size: 15px;
+}
+
+#tela {
+    height: auto;
+    max-width: 150px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    margin-left: 20px;
+}
+
+#tela:hover {
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+
+.slide {
+    text-align: center;
+}
+
+#topico {
+    color: lightblue;
+    margin-left: 2em;
+}
+
+.footer:hover {
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center !important;
+    font-size: 20px;
+
+}
+
+.slider-container1 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider-container1 li {
+    list-style: none;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider-container1 img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .slider-container1 {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .slider-container1 li {
+        margin-bottom: 20px;
+    }
+}
